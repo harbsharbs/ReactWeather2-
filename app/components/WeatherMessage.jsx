@@ -1,9 +1,10 @@
 var React = require('react');
 
-var WeatherMessage = ({temp, location}) => {
+var WeatherMessage = ({details, location}) => {
   return (
     <div>
-      <h3>It's {temp} degrees in {location}</h3>
+      <h3>It's {details.temp} degrees in {location}</h3>
+      <p> Today's high is: {details.max} </p>
     </div>
   );
 };
